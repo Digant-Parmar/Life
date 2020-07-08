@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.SignIn">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolBar"
+        android:layout_marginTop="25dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/DarkBlack"
+            android:textColorHint="@color/colorAccent"
+            app:met_baseColor="#FFFFFF"
+            app:met_errorColor="#F60000"
+            app:met_floatingLabel="normal"
+            app:met_floatingLabelAlwaysShown="true"
+            app:met_floatingLabelText="Username"
+            app:met_floatingLabelTextColor="#FFFFFF"
+            app:met_helperTextColor="#FFFFFF"
+            app:met_primaryColor="#FFFFFF"
+            app:met_textColor="#FFFFFF"
+            app:met_textColorHint="#FFFFFF"
+            app:met_underlineColor="#939393" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/DarkBlack"
+            android:textColorHint="@color/colorAccent"
+            app:met_baseColor="#FFFFFF"
+            app:met_errorColor="#F60000"
+            app:met_floatingLabel="normal"
+            app:met_floatingLabelAlwaysShown="true"
+            app:met_floatingLabelText="Email"
+            app:met_floatingLabelTextColor="#FFFFFF"
+            app:met_helperTextColor="#FFFFFF"
+            app:met_primaryColor="#FFFFFF"
+            app:met_textColor="#FFFFFF"
+            app:met_textColorHint="#FFFFFF"
+            app:met_underlineColor="#939393" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/colorAccent"
+            android:inputType="textPassword"
+            android:textColorHint="@color/colorAccent"
+            app:met_baseColor="#FFFFFF"
+            app:met_floatingLabel="normal"
+            app:met_floatingLabelAlwaysShown="true"
+            app:met_floatingLabelText="Password"
+            app:met_floatingLabelTextColor="#FFFFFF"
+            app:met_helperTextColor="#FFFFFF"
+            app:met_primaryColor="#FFFFFF"
+            app:met_textColor="#F8F8F8"
+            app:met_textColorHint="#FFFFFF"
+            app:met_underlineColor="#858484" />
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="Sign Up"
+            android:textColor="#ffff"
+            />
+
+    </LinearLayout>
+
+
+</FrameLayout>

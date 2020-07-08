@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "999411037773",
+    "firebase_url": "https://trychat-d1380.firebaseio.com",
+    "project_id": "trychat-d1380",
+    "storage_bucket": "trychat-d1380.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:999411037773:android:9454ed3ca236a2d0cf4e04",
+        "android_client_info": {
+          "package_name": "com.example.life"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "999411037773-km4s1hluavqgghobr440o71et4oui7cb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrvCE1S6hiCb2Mhws-QvoO-Z3VXSiMww4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "999411037773-km4s1hluavqgghobr440o71et4oui7cb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:999411037773:android:833d081716c39b81cf4e04",
+        "android_client_info": {
+          "package_name": "com.example.trychat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "999411037773-km4s1hluavqgghobr440o71et4oui7cb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrvCE1S6hiCb2Mhws-QvoO-Z3VXSiMww4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "999411037773-km4s1hluavqgghobr440o71et4oui7cb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
