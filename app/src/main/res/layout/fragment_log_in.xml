@@ -17,7 +17,7 @@
         android:padding="16dp">
 
         <com.rengwuxian.materialedittext.MaterialEditText
-            android:id="@+id/email"
+            android:id="@+id/edtEmailSignUp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -37,7 +37,7 @@
             app:met_underlineColor="#939393" />
 
         <com.rengwuxian.materialedittext.MaterialEditText
-            android:id="@+id/password"
+            android:id="@+id/edtPasswordSignUp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -64,6 +64,14 @@
             android:text="Log In"
             android:textColor="#ffff"
              />
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/btnGoogleLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+
 
     </LinearLayout>
 

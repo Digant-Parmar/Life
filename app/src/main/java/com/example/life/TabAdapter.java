@@ -7,7 +7,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
 import com.example.life.fragments.LogIn;
-import com.example.life.fragments.SignIn;
+import com.example.life.fragments.SignUp;
 
 public class TabAdapter extends FragmentPagerAdapter {
     public TabAdapter(@NonNull FragmentManager fm, int behavior) {
@@ -22,8 +22,8 @@ public class TabAdapter extends FragmentPagerAdapter {
                 LogIn logIn = new LogIn();
                 return logIn;
             case 1:
-                SignIn signIn = new SignIn();
-                return signIn;
+                SignUp signUp = new SignUp();
+                return signUp;
             default:
                 return null;
         }
