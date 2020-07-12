@@ -1,4 +1,4 @@
-package com.example.life;
+package com.example.life.LoginSignIn;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;

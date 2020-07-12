@@ -1,4 +1,4 @@
-package com.example.life;
+package com.example.life.LoginSignIn;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -7,7 +7,8 @@ import androidx.viewpager.widget.ViewPager;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.example.life.fragments.SignUp;
+import com.example.life.chatActivities.ChatActivity;
+import com.example.life.R;
 import com.google.android.material.tabs.TabLayout;
 import com.google.firebase.auth.FirebaseAuth;
 
