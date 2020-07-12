@@ -10,9 +10,11 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.Toast;
 
 
+import com.example.life.LoginSignIn.PhoneLoginActivity;
 import com.example.life.chatActivities.ChatActivity;
 import com.example.life.R;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
@@ -31,6 +33,8 @@ import com.google.firebase.auth.GoogleAuthProvider;
 public class LogIn extends Fragment {
 
     private static final int RC_SIGN_IN = 234;
+
+    private Button btnPhoneLoginButton;
 
     //Tag for the logs optional
     private static final String TAG = "simplifiedcoding";
@@ -61,6 +65,16 @@ public class LogIn extends Fragment {
                 signIn();
             }
         });
+
+        btnPhoneLoginButton = v.findViewById(R.id.btnPhoneLogin);
+        btnPhoneLoginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent phoneLoginIntent = new Intent(getContext(), PhoneLoginActivity.class);
+                startActivity(phoneLoginIntent);
+            }
+        });
+
 
 
     // Inflate the layout for this fragment

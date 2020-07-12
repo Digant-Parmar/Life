@@ -71,6 +71,15 @@
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnPhoneLogin"
+            android:text="Phone"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="10dp">
+        </Button>
 
 
 
