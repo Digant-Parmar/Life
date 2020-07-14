@@ -131,6 +131,9 @@ public class ChatActivity extends AppCompatActivity {
 
             case R.id.createGroup:
                 RequestNewGroup();
+
+            case R.id.findFriends:
+                SendUserToFindFriendsActivity();
         }
 
         return super.onOptionsItemSelected(item);
@@ -190,9 +193,13 @@ public class ChatActivity extends AppCompatActivity {
                         if(task.isSuccessful()){
                             Toast.makeText(ChatActivity.this, "Group "+groupName+" created successfully", Toast.LENGTH_SHORT).show();
                         }
-
                     }
                 });
+    }
+
+    private void SendUserToFindFriendsActivity(){
+        startActivity(new Intent(ChatActivity.this, FindFriendsActivity.class)
+                );
     }
 
 

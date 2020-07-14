@@ -8,16 +8,22 @@
         android:orderInCategory="100"
         app:showAsAction="never"/>
 
+    <item
+        android:id="@+id/findFriends"
+        android:title="Find Friends"
+        android:orderInCategory="101"
+        app:showAsAction="never"/>
+
 
     <item
         android:id="@+id/mnSetting"
-        android:orderInCategory="101"
+        android:orderInCategory="102"
         android:title="Setting"
         app:showAsAction="never" />
 
     <item
         android:id="@+id/logout"
-        android:orderInCategory="102"
+        android:orderInCategory="103"
         android:title="LogOut"
         app:showAsAction="never" />
 </menu>

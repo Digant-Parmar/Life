@@ -44,22 +44,16 @@ public class PhoneLoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_phone_login);
-
         btnSendVerificationCode = findViewById(R.id.btnSendVerificationCode);
         btnVerify = findViewById(R.id.btnVerify);
         inputPhoneNumber = findViewById(R.id.phoneNumberInput);
         inputVerificationCode = findViewById(R.id.otpInput);
-
         mAuth = FirebaseAuth.getInstance();
         loadingBar = new ProgressDialog(this);
-
-
         btnSendVerificationCode.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 String phoneNumber = inputPhoneNumber.getText().toString();
-
                 if(TextUtils.isEmpty(phoneNumber)){
                     Toast.makeText(PhoneLoginActivity.this, "Please Enter Your Phone Number", Toast.LENGTH_SHORT).show();
                 }else {
@@ -76,7 +70,6 @@ public class PhoneLoginActivity extends AppCompatActivity {
                 }
             }
         });
-
         btnVerify.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -97,7 +90,6 @@ public class PhoneLoginActivity extends AppCompatActivity {
                 }
             }
         });
-
         mCallbacks = new PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
             @Override
             public void onVerificationCompleted(@NonNull PhoneAuthCredential phoneAuthCredential) {
@@ -107,15 +99,12 @@ public class PhoneLoginActivity extends AppCompatActivity {
 
             @Override
             public void onVerificationFailed(@NonNull FirebaseException e) {
-
                 loadingBar.dismiss();
                 Toast.makeText(PhoneLoginActivity.this, "Invalid Phone Number", Toast.LENGTH_SHORT).show();
-
                 btnSendVerificationCode.setVisibility(View.VISIBLE);
                 inputPhoneNumber.setVisibility(View.VISIBLE);
                 inputVerificationCode.setVisibility(View.INVISIBLE);
                 btnVerify.setVisibility(View.INVISIBLE);
-
             }
             @Override
             public void onCodeSent(@NonNull String verificationId,
@@ -139,8 +128,6 @@ public class PhoneLoginActivity extends AppCompatActivity {
                 // ...
             }
         };
-
-
     }
 
     private void signInWithPhoneAuthCredential(PhoneAuthCredential credential) {
@@ -160,7 +147,6 @@ public class PhoneLoginActivity extends AppCompatActivity {
                     }
                 });
     }
-
     private void SendUserToChatActivity() {
 
         Intent ChatActivityIntent = new Intent(PhoneLoginActivity.this, ChatActivity.class);
