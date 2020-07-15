@@ -143,6 +143,7 @@ public class SignUp extends Fragment {
                             HashMap<String,String > hashMap = new HashMap<>();
                             hashMap.put("uid",userid);
                             hashMap.put("username",username);
+                            hashMap.put("status","WhatsApp is boring Lets have Some Fun While Chatting");
                             //hashMap.put("imageURL","default");
 
                             reference.setValue(hashMap).addOnCompleteListener(new OnCompleteListener<Void>() {
