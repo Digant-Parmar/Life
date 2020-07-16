@@ -19,6 +19,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 
+import com.example.life.ContactsActivity;
 import com.example.life.LoginSignIn.StartUp;
 import com.example.life.R;
 import com.example.life.SettingActivity;
@@ -134,12 +135,19 @@ public class ChatActivity extends AppCompatActivity {
 
             case R.id.findFriends:
                 SendUserToFindFriendsActivity();
+            case R.id.Contacts:
+                SendUserToFindContactsAvtivity();
         }
 
         return super.onOptionsItemSelected(item);
 
 
 }
+
+    private void SendUserToFindContactsAvtivity() {
+        startActivity(new Intent(ChatActivity.this, ContactsActivity.class)
+        );
+    }
 
     private void RequestNewGroup() {
         AlertDialog.Builder builder = new AlertDialog.Builder(ChatActivity.this,R.style.AlertDialog);

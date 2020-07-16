@@ -5,13 +5,13 @@
     <item
         android:id="@+id/createGroup"
         android:title="Create Group"
-        android:orderInCategory="100"
+        android:orderInCategory="101"
         app:showAsAction="never"/>
 
     <item
         android:id="@+id/findFriends"
         android:title="Find Friends"
-        android:orderInCategory="101"
+        android:orderInCategory="100"
         app:showAsAction="never"/>
 
 
@@ -25,5 +25,11 @@
         android:id="@+id/logout"
         android:orderInCategory="103"
         android:title="LogOut"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/Contacts"
+        android:orderInCategory="104"
+        android:title="Contacts"
         app:showAsAction="never" />
 </menu>
