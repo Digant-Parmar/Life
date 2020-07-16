@@ -13,7 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.life.Model.User;
+
 import com.example.life.chatActivities.Contacts;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
@@ -125,9 +125,9 @@ public class ContactsActivity extends AppCompatActivity {
         public ContactsViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            userName = itemView.findViewById(R.id.userNames);
-            userStatus = itemView.findViewById(R.id.userStatus);
-            profileImage = itemView.findViewById(R.id.usersProfileImage);
+            userName = itemView.findViewById(R.id.listName);
+            userStatus = itemView.findViewById(R.id.listStatus);
+            profileImage = itemView.findViewById(R.id.listProfileImage);
         }
     }
 }

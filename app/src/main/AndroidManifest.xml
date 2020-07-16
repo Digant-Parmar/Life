@@ -13,7 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".chatActivities.PrivateChatActivity"></activity>
+        <activity android:name=".chatActivities.PrivateChatActivity"
+            android:parentActivityName=".chatActivities.ChatActivity"
+            ></activity>
         <activity
             android:name=".ContactsActivity"
             android:parentActivityName=".chatActivities.ChatActivity"></activity>

@@ -4,13 +4,23 @@
     android:layout_width="match_parent"
     android:padding="10dp"
     android:layout_height="wrap_content">
-
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
     <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:id="@+id/listProfileImage"
         android:src="@mipmap/ic_launcher"
         />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/listProfileImage"
+        android:layout_toEndOf="@+id/listProfileImage"
+        >
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -20,7 +30,22 @@
         android:layout_toEndOf="@+id/listProfileImage"
         android:layout_marginLeft="10dp"
         android:layout_centerVertical="true"
-        android:textSize="18dp"/>
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="listName"
+            android:id="@+id/listStatus"
+            android:layout_toRightOf="@+id/listProfileImage"
+            android:layout_toEndOf="@+id/listProfileImage"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:textSize="18dp"/>
+
+
+    </LinearLayout>
+</LinearLayout>
 
 
 

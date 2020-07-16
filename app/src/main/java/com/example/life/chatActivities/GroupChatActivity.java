@@ -16,7 +16,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-import com.example.life.Model.User;
 import com.example.life.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.ChildEventListener;
